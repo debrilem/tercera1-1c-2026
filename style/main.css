@@ -3,13 +3,16 @@
     padding: 0;
 }
 
+
+
 menu {
-width: 100%;
+      width: 100%;
       height: 120px;
       background-color: rgb(25, 95, 66);
       display: flex;
       justify-content: space-between;
       padding: 0;
+
 }
 
 .menu-izquierda {
@@ -18,6 +21,7 @@ width: 20%;
       display: flex;
       align-items: center;
       justify-content: center;
+      border: 2px solid green;
 }
 
 .menu-izquierda img {
@@ -39,3 +43,59 @@ width: 20%;
       text-decoration: none;
       font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     }
+
+    @media (max-width: 768px) {
+      .menu-izquierda {
+            width: 90%;
+            justify-content: center;
+            background-color: white;
+      }
+
+      .menu-derecha {
+            display: none;
+      }
+
+      .menu-container {
+            width: 10%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+      }
+
+      .menu-container .hamburger-icon {
+            background-color: rgb(25, 95, 66);
+            width: 35px;
+            height: 25px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            z-index: 1000;
+      }
+      .menu-container .hamburger-icon span {
+            background-color: rgb(255, 255, 255);
+            width: 90%;
+            height: 4px;
+            display: block;
+            border-radius: 2px;
+      }
+      .menu-derecha-open {
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+            width: 200px;
+            height: 300px;
+            background-color: rgb(7, 10, 41);
+            border: rgb(255, 255, 255) solid 3px;
+            border-radius: 10px;
+            
+      }
+      .menu-derecha-open a {
+            padding: 10px;
+            margin-right: 0;
+      }
+      
+
+}
