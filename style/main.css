@@ -16,7 +16,7 @@ menu {
 }
 
 .menu-izquierda {
-width: 20%;
+      width: 20%;
       background-color: rgb(255, 255, 255);
       display: flex;
       align-items: center;
@@ -43,6 +43,157 @@ width: 20%;
       text-decoration: none;
       font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     }
+
+.main-header {
+      width: 100%;
+      height: 200%;
+      padding: 40px 0;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+}
+
+ .main-header .texto-principal {
+      width: 80%;
+      height: 100%;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+      font-size: 15px;
+      text-align: center;
+ }
+ 
+ .main-header .texto-principal p {
+      font-size: 20px;
+      margin: 0%;
+ }
+
+ .card-list {
+      width: 100%;
+      background-color: rgb(224, 217, 243);
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 50px;
+      padding-top: 40px;
+ }
+
+ .card-item {
+      width: 27%;
+      height: 500%;
+      border: 2px solid black;
+      border-radius: 10px;
+      overflow: hidden;
+ }
+
+.card-item img {
+      width: 100%;
+      height: auto;
+}
+
+.card-info {
+      width: 100%;
+      height: auto;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      padding: 10px;
+}
+
+.card-title {
+      font-size: 20px;
+      font-weight: bold;
+      padding-bottom: 10px;
+      font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.card-desc {
+      font-size: 15px;
+      text-align: left;
+      padding-bottom: 10px;
+}
+
+.card-cta {
+      text-decoration: none;
+      width: 30%;
+      height: auto;
+      background-color: rgb(11, 3, 34);
+      color: white;
+      padding: 10px;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      border: 1px solid rgb(11, 15, 63);
+      border-radius: 5px;
+}
+
+.card-cta:hover {
+      transform: scale(1.02);
+      background-color: rgb(233, 228, 247);
+
+}
+
+.boton-cta {
+      width: 330px;
+      display: flex;
+      flex-direction: row;
+      align-items:flex-end;
+      justify-content: right;
+      margin: 0%;
+}
+
+.main-accordion-container {
+      width: 100%;
+}
+
+.accordion-item {
+      width: 100%;
+      height: auto;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      
+}
+
+.accordion-item:hover {
+      transform: scale(1.04);
+}
+
+.accordion-title {
+      width: 100%;
+      height: 50%;
+      background-color: rgb(224, 217, 243);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      font-size: 18px;
+      font-weight: bold;
+}
+
+.accordion-desc {
+      display: none;
+}
+
+.tab-active .accordion-desc {
+      width: 100%;
+      height: 50px;
+      font-size: 15px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      pointer-events: visible;
+      border-top: 1px solid black;
+      text-align: center;
+}
 
     @media (max-width: 768px) {
       .menu-izquierda {
@@ -95,7 +246,47 @@ width: 20%;
       .menu-derecha-open a {
             padding: 10px;
             margin-right: 0;
+            font-family: 'Times New Roman', Times, serif;
       }
-      
+
+      .card-list {
+             width: 100%;
+             height: auto;
+             padding: 30px 0 30px 0;
+      }
+
+      .card-item {
+            width: 80%;
+      }
+
+      .card-info {
+            height: auto;
+      }
+
+      .card-title {
+            font-size: 25px;
+      }
+
+      .card-desc {
+            font-size: 20px;
+      }
+
+      .boton-cta {
+            width: auto;
+            margin-right: 20px;
+            justify-content: right;
+      }
+     
+      .accordion-item {
+            width: auto;
+            height: 50px;
+            
+      }
+
+      .tab-active .accordion-desc {
+            height: auto;
+            font-size: 20px;
+            
+      }
 
 }

@@ -20,7 +20,7 @@
       <a href="./medicamentos.php">Medicamentos</a>
       <a href="./vitaminas.php">Vitaminas</a>
       <a href="./servicios.php">Servicios</a>
-      <a href="./preguntas.php">Preguntas</a>
+      <a href="./infantil.php">Cuidado infantil</a>
       <a href="./contacto.php">Contacto</a>
     </div>
     <div class="menu-container">
